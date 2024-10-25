@@ -51,7 +51,7 @@ elif [ "$operador" == "/" ]; then
 	resultado=$(echo "scale=2; $num1 / $num2" | bc -l)
 
 elif [ "$operador" == "^" ]; then
-	resultado=$(echo "scale=2; $num1 ** num2" | bc -l)
+	resultado=$(echo "scale=2; $num1 ** $num2" | bc -l)
 fi
 
 # Exibir o resultado
